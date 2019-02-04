@@ -6,7 +6,7 @@ ENV PROFILE default
 RUN apk --no-cache --virtual build add sed build-base libffi-dev openssl-dev &&\
     apk --no-cache add jpeg-dev zlib-dev libmagic ffmpeg &&\
     pip install -U pip &&\
-    pip install -r -U requirements.txt &&\
+    pip install -r requirements.txt &&\
     rm -rf ~/.cache &&\
     apk del build  &&\
     chmod +x /opt/app/init.sh
