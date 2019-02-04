@@ -28,6 +28,8 @@ TOKEN: Telegram Bot Token (@botfather)
 
 ADMIN: Your Telegram ID (@idbot)
 
+将里面的 token 和 admin 的值分别换为 bottoken 和 Chat ID
+
 * step 2
 
 ```
@@ -35,3 +37,7 @@ docker logs -f efbwechat
 ```
 
 Scan the QRCode to login
+
+打开手机微信扫码，扫描屏幕上的二维码，然后确认登录。
+
+
