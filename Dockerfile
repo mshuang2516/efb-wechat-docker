@@ -5,9 +5,10 @@ ENV EFB_DATA_PATH  /opt/app/ehforward_config
 ENV PROFILE default
 RUN apk --no-cache --virtual build add sed build-base libffi-dev openssl-dev &&\
     apk --no-cache add jpeg-dev zlib-dev libmagic ffmpeg &&\
-    pip install -r requirements.txt &&\
+    pip install -U pip &&\
+    pip install -r -U requirements.txt &&\
     rm -rf ~/.cache &&\
     apk del build  &&\
     chmod +x /opt/app/init.sh
 VOLUME /opt/app/ehforward_config/profiles/${PROFILE}/blueset.telegram/tadata.db
-ENTRYPOINT /opt/app/init.sh
+ENTRYPOINT init.sh
