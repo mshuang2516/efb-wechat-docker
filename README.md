@@ -25,6 +25,7 @@ docker run -d -t --name "efbwechat" -e TOKEN={} -e ADMIN={} mikubill/efbwechat
 ```
 
 TOKEN: Telegram Bot Token (@botfather)
+
 ADMIN: Your Telegram ID (@idbot)
 
 * step 2
