@@ -34,7 +34,7 @@ ADMIN: Your Telegram ID (@idbot)
 * step 2
 
 ```
-docker logs -f efbwechat
+docker logs -f efbwechat 
 ```
 
 Scan the QRCode to login
